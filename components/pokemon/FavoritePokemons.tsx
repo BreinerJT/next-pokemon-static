@@ -1,10 +1,10 @@
-import { FC } from 'react';
-import { Grid } from '@nextui-org/react';
+import { FC } from 'react'
+import { Grid } from '@nextui-org/react'
 
-import { FavoriteCardPokemon } from './';
+import { FavoriteCardPokemon } from './'
 
 interface Props {
-    pokemons: number[];
+    pokemons: number[]
 }
 
 export const FavoritePokemons: FC<Props> = ({ pokemons }) => {
@@ -19,4 +19,4 @@ export const FavoritePokemons: FC<Props> = ({ pokemons }) => {
     </Grid.Container>
 
   )
-};
+}

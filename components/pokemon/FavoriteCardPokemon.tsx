@@ -1,21 +1,21 @@
-import { FC } from 'react';
-import { useRouter } from 'next/router';
+import { FC } from 'react'
+import { useRouter } from 'next/router'
 
-import { Grid, Card } from '@nextui-org/react';
+import { Grid, Card } from '@nextui-org/react'
 
 
 interface Props {
-    pokemonId: number;
+    pokemonId: number
 }
 
 
 export const FavoriteCardPokemon:FC<Props> = ({ pokemonId }) => {
 
-  const router = useRouter();
+  const router = useRouter()
 
 
   const onFavoriteClicked = () => {
-    router.push(`/pokemon/${ pokemonId }`);
+    router.push(`/pokemon/${ pokemonId }`)
   }
 
 
@@ -30,4 +30,4 @@ export const FavoriteCardPokemon:FC<Props> = ({ pokemonId }) => {
         </Card>
     </Grid>
   )
-};
+}

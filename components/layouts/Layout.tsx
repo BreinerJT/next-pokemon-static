@@ -1,16 +1,14 @@
-import { FC } from 'react';
-import Head from 'next/head';
+import { FC } from 'react'
+import Head from 'next/head'
 
-import { Navbar } from '../ui';
+import { Navbar } from '../ui'
 
 interface Props {
   children: JSX.Element
-  title?: string;
+  title?: string
 }
 
-
-const origin = (typeof window === 'undefined') ? '' : window.location.origin;
-
+const origin = (typeof window === 'undefined') ? '' : window.location.origin
 
 export const Layout: FC<Props> = ({ children, title }) => {
   return (
@@ -37,4 +35,4 @@ export const Layout: FC<Props> = ({ children, title }) => {
     
     </>
   )
-};
+}

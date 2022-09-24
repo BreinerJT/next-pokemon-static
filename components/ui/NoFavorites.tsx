@@ -1,5 +1,5 @@
 
-import { Container, Text, Image } from '@nextui-org/react';
+import { Container, Text, Image } from '@nextui-org/react'
 
 export const NoFavorites = () => {
   return (
@@ -23,4 +23,4 @@ export const NoFavorites = () => {
         />
       </Container>
   )
-};
+}
